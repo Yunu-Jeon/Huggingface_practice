@@ -1,4 +1,4 @@
-# HuggingFace 실습
+# **HuggingFace Practice**
 ## 1. 주제
 텍스트 혐오 표현 분류 및 순화 시스템
 
