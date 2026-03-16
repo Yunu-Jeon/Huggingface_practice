@@ -8,8 +8,13 @@
 ex) 당신의 일처리는 정말 별로예요. 다음에 또 이렇게 하면 회사에서 잘릴 거예요. → 이 부분이 제가 지시한 바와 다르니 다시 해보셔야 할 것 같아요.
 
 ## 3. 사용한 모델
-- 혐오 표현 분류: https://huggingface.co/hongssi/final_abuse_manual_model
-- 문장 생성: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
+1. 혐오 표현 분류: https://huggingface.co/hongssi/final_abuse_manual_model
+   - 한국어 문장에서 욕설, 혐오 표현, 모욕성 발언 등을 탐지하는 다중 레이블 분류 모델
+   - Base Model: beomi/KcELECTRA-small
+   - 클래스 라벨: "여성/가족", "남성", "성소수자", "인종/국적", "연령" 등 총 11개
+
+2. 문장 생성: https://huggingface.co/Qwen/Qwen2.5-3B-Instruct
+   - 다국어 텍스트 생성 모델 (한국어 지원)
   
 ## 4. 결과 구현
 input()함수를 활용하여 특정 텍스트를 삽입하면 그에 따라 완곡하거나 정제된 문장을 반환해준다.
